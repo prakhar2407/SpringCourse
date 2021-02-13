@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "employeeBean" class="com.ncu.ByName.Employee" autowire="byName">
+        <property name="employeeName" value="Rahul Arora"></property>
+    </bean>
+
+    <bean id="address" class="com.ncu.ByName.Address">
+        <property name="pinCode" value="564897"></property>
+    </bean>
+
+    <bean id="department" class="com.ncu.ByName.Department">
+        <property name="deptName" value="ME"></property>
+    </bean>
+
+</beans>
