@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="departmentBean" class="Setter.Department">
+        <property name="departmentName" value="Computer Science"/>
+    </bean>
+
+    <bean id="employeeBean" class="Setter.Employee">
+        <property name="name" value="Rahul Aluwalia"/>
+        <property name="department" ref="departmentBean"/>
+    </bean>
+</beans>

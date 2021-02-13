@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="c_Class" class="com.ncu.C" scope="singleton">
+        <constructor-arg value="PrakharBansal"/>
+    </bean>
+    <bean id="b2_Class" class="com.ncu.B" scope="prototype"><property name="cObject" ref="c_Class"/></bean>
+    <bean id="a_Class" class="com.ncu.A" scope="singleton"><property name="bObject" ref="b2_Class"/></bean>
+    
+
+</beans>
