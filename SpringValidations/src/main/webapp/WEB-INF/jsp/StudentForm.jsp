@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #f8f5f1">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
