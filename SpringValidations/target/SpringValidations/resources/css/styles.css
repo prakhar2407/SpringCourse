@@ -1,0 +1,61 @@
+.studentForm {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.studentForm:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.submit_button {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 23px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.submit_button:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.greet_Student {
+    text-align: center;
+}
+
+.processed_Form {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.processed_Form img {
+    margin-left: auto;
+    margin-right: auto;
+}
