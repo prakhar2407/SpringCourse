@@ -21,10 +21,15 @@
 
     </bean>
 
-    <bean id="messageSource"
-          class="org.springframework.context.support.ResourceBundleMessageSource">
+    <bean class = "org.springframework.context.support.ResourceBundleMessageSource"
 
-        <property name="basenames" value="resources/messages.properties" />
+          id = "messageSource">
+
+        <property name = "basename" value = "messages" />
 
     </bean>
+
+<!--    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">-->
+<!--        <property name="basenames" value="messages" />-->
+<!--    </bean>-->
 </beans>

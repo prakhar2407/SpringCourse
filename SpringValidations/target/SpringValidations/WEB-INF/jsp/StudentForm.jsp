@@ -39,7 +39,9 @@
     CourseCode: <form:input path="courseCode" cssClass="w3-input"></form:input>
                 <form:errors path="courseCode" cssClass="error"></form:errors>
     <br><br>
-    <input type="submit" class="submit_button" value="Submit">
+    Password: <form:input path="password" cssClass="w3-input" ></form:input>
+    <form:errors path="password" cssClass="error"></form:errors>
+    <input style="margin-top: 20px" type="submit" class="submit_button" value="Submit">
 </form:form>
 </body>
 </html>

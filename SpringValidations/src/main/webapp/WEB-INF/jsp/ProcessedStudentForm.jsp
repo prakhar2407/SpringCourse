@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #f8f5f1">
+<body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">

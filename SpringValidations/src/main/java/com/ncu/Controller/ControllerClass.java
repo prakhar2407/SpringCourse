@@ -6,18 +6,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
 @Controller
+@SessionAttributes("student")
 public class ControllerClass {
+    @ModelAttribute("student")
+    public Student setUpStudentForm() {
+        return new Student();
+    }
+
     @InitBinder
     public void initBinder(WebDataBinder dataBinder) {
         StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
         dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
+
+    @RequestMapping("/")
+    public String method1(){
+        return "homeController";
     }
 
     @RequestMapping("/StudentForm")
@@ -27,13 +36,14 @@ public class ControllerClass {
     }
 
     @RequestMapping("/ResultofForm")
-    public String method2(@Valid @ModelAttribute("student") Student theStudent, BindingResult br){
-        System.out.println(theStudent.getFname());
-        System.out.println(theStudent.getLname());
+    public String method2(@Valid @ModelAttribute("student") Student student, BindingResult br){
+        System.out.println(student.getFname());
+        System.out.println(student.getLname());
         if (br.hasErrors()){
             return "StudentForm";
         }
         else {
+
             return "ProcessedStudentForm";
         }
     }
